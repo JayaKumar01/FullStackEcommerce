@@ -1,0 +1,14 @@
+<ul class="navbar-nav ms-auto d-flex flex-row">
+    <!-- Notification dropdown -->
+    <li class="nav-item dropdown">
+      <a class="text-reset me-3" routerLink="/cart-details">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <a>
+        <span class="badge rounded-pill badge-notification bg-danger mb-2 ml-2">{{totalQuantity}}</span>
+      </a>  
+      <a>
+      <span class="badge rounded-pill badge-notification bg-danger mb-2 ml-2">{{totalPrice | currency: 'INR'}}</span>
+      </a>
+    </li>     
+</ul>

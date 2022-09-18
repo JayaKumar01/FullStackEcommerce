@@ -1,0 +1,11 @@
+<div class="d-none d-md-flex input-group w-auto my-auto">
+    <input #searchInput
+        autocomplete="off"
+        type="text"
+        class="form-control rounded"
+        placeholder='Search for products ...'
+        style="min-width: 225px; margin-left: 150px;" 
+        (keyup.enter)="searchProduct(searchInput.value)"
+    />
+    <button (click)="searchProduct(searchInput.value)" class="input-group-text border-0 ml-4" style="margin-left: 10px;"><i class="fas fa-search"></i></button>  
+</div> 

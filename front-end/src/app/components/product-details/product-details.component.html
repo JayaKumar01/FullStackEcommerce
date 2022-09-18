@@ -1,0 +1,20 @@
+<div class="detail-section">
+    <div *ngIf="product" class="container-fluid"> 
+
+        <img src="{{product.imageUrl}}" class="detail-img"> 
+
+        <h2>{{product.name}}</h2>
+
+        <h4>{{product.unitPrice | currency:'INR'}}</h4> 
+
+        <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
+
+        <hr> 
+        <div style="margin-bottom: 200px;">
+        <h3>Description</h3> 
+        <p>{{product.description}}</p> 
+        <a routerLink="/products" class="btn btn-link">Back to Product List</a>
+        </div>
+    </div>
+</div>
+

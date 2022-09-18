@@ -1,0 +1,68 @@
+<div class="page">
+<header>
+  <!-- Sidebar --> 
+
+  <!-- Sidebar -->
+  <app-product-category-menu></app-product-category-menu>
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        E-Commerce
+      </a>
+      <!-- Search form --> 
+      <app-search></app-search>
+
+      <app-login-status></app-login-status>
+      
+      <app-cart-status></app-cart-status>
+
+      <!-- Right links -->
+      
+    </div>
+    <!-- Container wrapper --> 
+  </nav>
+  <!-- Navbar -->
+</header>
+<!--Main Navigation--> 
+
+  <!--Main layout-->
+  <main style="margin-top: 58px;">
+    <div class="container pt-4"> 
+ 
+
+      <router-outlet>
+
+      </router-outlet>
+
+
+
+
+    </div>
+  </main> 
+
+  
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center ml-4 p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark ml-4" href="#">E-Commerce</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>

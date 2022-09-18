@@ -1,0 +1,17 @@
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+      <div *ngFor="let productCategory of productCategories" class="list-group list-group-flush mx-4 mt-4">
+        <a
+          routerLink="/category/{{productCategory.id}}"
+          class="list-group-item list-group-item-action py-2 ripple" 
+          routerLinkActive="active"
+          aria-current="true"
+        >
+          <span>{{productCategory.categoryName}}</span>
+        </a>
+        <!-- <a routerLink="/category/2" class="list-group-item list-group-item-action py-2 ripple" routerLinkActive="active">
+          <span>Coffee Mugs</span>
+        </a> -->
+      </div>
+    </div>
+</nav>
